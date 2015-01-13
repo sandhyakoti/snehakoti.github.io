@@ -97,9 +97,15 @@ CLIENTS SECTION
 #clients{
     padding-top: 30px;
 }
-#clients h4{
+#subscribe-button-1 a{
     text-transooteorm: uppercase;
     padding-top: 10px;
+    margin-top: 10px;
+}
+
+#subscribe-button-1 .im-checkout {
+    margin: 0 auto;
+
 }
 
 #clients .col-md-4{
