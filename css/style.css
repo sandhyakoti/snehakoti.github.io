@@ -325,6 +325,19 @@ FOLLOW BUTTON
 /*================================
 FAQS 
 ================================*/
+
+#faqs .quote p{   
+    font-style: italic;
+    font-size: 14px;
+}
+
+#faqs .quote h5{margin-bottom: 5px;}
+
+#faqs .cd-faq-trigger {
+    font-size: 18px;
+  
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
