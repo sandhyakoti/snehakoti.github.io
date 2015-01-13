@@ -3,47 +3,54 @@
 //==========================================================
 $.jribbble.getShotsByPlayerId('srizon', function (playerShots) {
     var html = [];
-
+    var toys = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 //========================
 //PORTFOLIO SETUP
 //========================
-    $.each(playerShots.shots, function (i, shot) {
-        html.push('<li><a href="' + shot.url + '">');
-        html.push('<img src="' + shot.image_teaser_url + '" ');
-        html.push('alt="' + shot.title + '"></a>');
-        html.push('<h3><a href="' + shot.url + '">' + shot.title + '</h3>');
-        html.push('<div class="likecount"><span class="icon-heart"></span> ' + shot.likes_count + '</div>');
-        html.push('<div class="commentcount"><span class="icon-bubbles"></span> ' + shot.comments_count + '</a></li></div>');
+    // $.each(playerShots.shots, function (i, shot) {
+    //     html.push('<li><a href="' + shot.url + '">');
+    //     html.push('<img src="' + shot.image_teaser_url + '" ');
+    //     html.push('alt="' + shot.title + '"></a>');
+    //     html.push('<h3><a href="' + shot.url + '">' + shot.title + '</h3>');
+    //     html.push('<div class="likecount"><span class="icon-heart"></span> ' + shot.likes_count + '</div>');
+    //     html.push('<div class="commentcount"><span class="icon-bubbles"></span> ' + shot.comments_count + '</a></li></div>');
+    // });
+
+    $.each(toys, function (i, shot) {
+        html.push('<li>');
+        html.push('<img src="img/toy-' + i + '.jpg" ');
+        html.push('<h3>Toy-' + i + '</h3>');
+        html.push('</li>');
     });
 
     $('#shotsByPlayerId').html(html.join(''));
 }, {page: 1, per_page: 9});
 
 //========================
-//Follow button
+//Follow button  : Removed
 //========================
 
-$(function() {
+// $(function() {
 
 
-	// SOME VARIABLES
-	var button = '.dribbble-follow-button',
-		label = $(button).text(),
-		username = $('a'+button).attr('href').toLowerCase().replace('http://dribbble.com/', ''),
-		disableCount = $(button).attr('class');
+// 	// SOME VARIABLES
+// 	var button = '.dribbble-follow-button',
+// 		label = $(button).text(),
+// 		username = $('a'+button).attr('href').toLowerCase().replace('http://dribbble.com/', ''),
+// 		disableCount = $(button).attr('class');
 
-	// DISPLAYED WHEN THE API IS NOT RESPONDING
-	$(button).wrap('<div class="dribbble-follow-button" />').removeClass().addClass('label').html('<i></i> '+label);
+// 	// DISPLAYED WHEN THE API IS NOT RESPONDING
+// 	$(button).wrap('<div class="dribbble-follow-button" />').removeClass().addClass('label').html('<i></i> '+label);
 
-	// REQUESTS USER'S DATA FROM DRIBBBLE'S API AND APPENDS IT
-	$.getJSON('http://api.dribbble.com/players/'+username+'?callback=?', function(data) {
-		$(button).wrap('<div class="dribbble-follow-button '+disableCount+'" />')
-        .parent().html('<a class="label" href="http://dribbble.com/'+username+'" target="_blank"><i></i>'+label+'</a><a class="count" href="http://dribbble.com/'+username+'/followers" target="_blank"><i></i><u></u>'+data.followers_count+' followers</a>');
-		$(button+'.disableCount').find('.count').remove();
-	});
+// 	// REQUESTS USER'S DATA FROM DRIBBBLE'S API AND APPENDS IT
+// 	$.getJSON('http://api.dribbble.com/players/'+username+'?callback=?', function(data) {
+// 		$(button).wrap('<div class="dribbble-follow-button '+disableCount+'" />')
+//         .parent().html('<a class="label" href="http://dribbble.com/'+username+'" target="_blank"><i></i>'+label+'</a><a class="count" href="http://dribbble.com/'+username+'/followers" target="_blank"><i></i><u></u>'+data.followers_count+' followers</a>');
+// 		$(button+'.disableCount').find('.count').remove();
+// 	});
 
-});
+// });
 
 
 //========================

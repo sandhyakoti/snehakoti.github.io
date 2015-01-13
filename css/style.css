@@ -157,7 +157,8 @@ PORTFOLIO SECTION
 }
 
 #shotsByPlayerId li img{
-    width: 100%;
+    width: 324px;
+    height: 243px;
     border-radius: 5px;
 }
 
