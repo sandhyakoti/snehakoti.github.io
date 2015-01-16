@@ -250,7 +250,10 @@ footer p, footer .bigicon {color: #7e7e7e;}
     letter-spacing: 3px;
 }
 
-.footersocial {margin-top: 30px;}
+.footersocial {
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
 
 .footersocial li{
     display:inline;
