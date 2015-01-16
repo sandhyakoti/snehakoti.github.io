@@ -134,12 +134,16 @@ ABOUT SECTION
 ================================*/
 #about{padding-top: 100px;}
 
-.myapps{margin-top: 25px;}
+#about .cubes img{
+  height: 532px;
+}
+
+/*.myapps{margin-top: 25px;}
 .myapps li{display: inline}
 .myapps li img{
     width: 30px;
 }
-
+*/
 /*================================
 PORTFOLIO SECTION
 ================================*/
