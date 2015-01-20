@@ -111,6 +111,7 @@ CLIENTS SECTION
 #subscribe-button-1 .im-checkout-btn.btn--flat {
   background: #81BEF7;
   border: 1px solid #5882FA;
+  margin-top: 40px;
 }
 
 #clients .col-md-4{
@@ -127,6 +128,12 @@ CLIENTS SECTION
 #clients li:last-child{
     margin-right: 0px;
 }
+
+#subscribe .text {
+    color:#291E85;
+    text-align: center;
+}
+
 
 
 /*================================
