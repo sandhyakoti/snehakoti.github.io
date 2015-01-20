@@ -5,11 +5,20 @@
 
 var html = [];
     var toys = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var toy_headings = ["Blocks & Building", "Art and Craft Toys", "Creative Toys",
+     "Educational Toys", "Puzzles", "Board games", "Learning & Activity Toys",
+     "Engineering Systems", "Toy Vehicles"];
+    var toy_text = ["Fine Motor Skills<br>Spatial Thinking<br>Creativity", "Creative Fun<br>Art and Maths<br>Pattern Making", "Problem Solving<br>Hand-eye co-ordination<br>Imagination", 
+    "Motor Skills<br>Pattern Recognition<br>Early Number Sense",
+    "Cognitive Skills<br>Motor Skills<br>Thinking Process", "Logical Thinking<br>Strategy Making<br>Concentration",
+    "Academic Readiness<br>Rational Thinking<br>Innovation", "Imagination<br>Intellectual Development<br>Problem Solving",
+    "Social Development<br>Emotional Development<br>Exploration"]
 
 $.each(toys, function (i, shot) {
-        html.push('<li>');
-        html.push('<img src="img/toy-' + i + '.jpg" ');
-        html.push('<h3>Toy-' + i + '</h3>');
+        html.push('<li class="wrapper">');
+        html.push('<span class="text">' + toy_text[i]+ '</span>');
+        html.push('<img src="img/toy-' + i + '.jpg">');
+        html.push('<h3>' + toy_headings[i] + '</h3>');
         html.push('</li>');
     });
 
