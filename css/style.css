@@ -411,7 +411,7 @@ FAQS
 
 
 a {
-  color: #a9c056;
+  color: #3722F2;
   text-decoration: none;
 }
 
@@ -572,7 +572,7 @@ a {
     top: 50%;
     height: 2px;
     width: 13px;
-    background: #cfdca0;
+    background: #6E5FF5;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition-property: -webkit-transform;
@@ -617,7 +617,7 @@ a {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #6c7d8e;
+  color: #6E5FF5;
 }
 @media only screen and (min-width: 768px) {
   .cd-faq-content {
