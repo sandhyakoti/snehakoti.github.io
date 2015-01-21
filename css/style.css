@@ -119,9 +119,13 @@ CLIENTS SECTION
 }
 
 #subscribe-button-1 .im-checkout-btn.btn--flat {
-  background: #81BEF7;
+  background: #64B1FA;
   border: 1px solid #5882FA;
   margin-top: 40px;
+}
+
+#subscribe-button-1 a:hover {
+    color:  #6E5FF5;
 }
 
 #clients .col-md-4{
@@ -140,7 +144,7 @@ CLIENTS SECTION
 }
 
 #subscribe .text {
-    color:#291E85;
+    color:#6E5FF5;
     text-align: center;
 }
 
@@ -410,7 +414,7 @@ FAQS
 }
 
 
-a {
+#faqs a {
   color: #3722F2;
   text-decoration: none;
 }
