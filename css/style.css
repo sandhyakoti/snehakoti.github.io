@@ -82,7 +82,8 @@ hr.separetor{
 HERO AREA
 ================================*/
 #hero{
-    color: #fff;
+    color: #000;
+    font-family: 'Raleway';
     text-align: center;
     background: url(../img/trianglify-background.svg)no-repeat; /*your background image*/
     max-height: 880px;
